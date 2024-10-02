@@ -1,0 +1,20 @@
+{
+  "name": "custom-schema-types",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Kyle Kurtz <kyle@kurtz.io>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "types": "mtgen --output=./src/modelInterfaces.ts src/models/ && prettier --write ./src/modelInterfaces.ts"
+  },
+  "dependencies": {
+    "luxon": "^3.5.0",
+    "mongoose": "^8.7.0",
+    "mongoose-tsgen": "^9.4.4"
+  },
+  "devDependencies": {
+    "@types/luxon": "^3.4.2",
+    "typescript": "^5.6.2"
+  }
+}
